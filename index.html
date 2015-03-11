@@ -313,6 +313,46 @@
 
 .container { width:100%;max-width:100%; }
 
+.icon-General_Loading::before {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
     </style>
 
     <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -544,7 +584,7 @@
       
       <div class="glyph">
         <div class="preview-glyphs">
-          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span>
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading spin"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span>
         </div>
         <div class="preview-scale">
           <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
