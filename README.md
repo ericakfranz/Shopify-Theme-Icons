@@ -14,6 +14,6 @@ The original AI file, SVG files and Font Custom files are all included in the re
 
 <p><a href="https://github.com/cam" class="user-mention">@cam</a> and the <a href="https://github.com/elkfox" class="user-mention">@elkfox</a> team produce and maintain this project, with help from the amazing <a href="http://fontcustom.com">Font Custom</a> project, Font Awesome, Homebrew and <a href="http://fontforge.github.io">FontForge</a>.</p>
 
-### >Support or Contact
+### Getting Involved
 
 <p>Get in touch with us at <a href="http://elkfox.com">http://elkfox.com</a> or the GitHub issues tracker for feedback and suggestions.</p>
