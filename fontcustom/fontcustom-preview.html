@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elkfox Shopify Font</title>
+
+    <style>
+      /* Page Styles */
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        color: #444;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      a,
+      a:visited {
+        color: #888;
+        text-decoration: underline;
+      }
+      a:hover,
+      a:focus { color: #000; }
+
+      header {
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        color: #888;
+        float: left;
+        font-size: 36px;
+        font-weight: 300;
+      }
+
+      header a {
+        float: right;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 960px;
+        padding: 0 40px;
+        width: 90%;
+      }
+
+      .glyph {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0 20px;
+        margin-bottom: 20px;
+      }
+
+      .preview-glyphs { vertical-align: bottom; }
+
+      .preview-scale {
+        color: #888;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .step {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        width: 10%;
+      }
+
+      .step .letters,
+      .step i {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+
+      .step:hover .letters { opacity: 1; }
+      .step:hover i { opacity: .3; }
+
+      .letters {
+        opacity: .3;
+        position: absolute;
+      }
+
+      .characters-off .letters { display: none; }
+      .characters-off .step:hover i { opacity: 1; }
+
+      
+      .size-12 { font-size: 12px; }
+      
+      .size-14 { font-size: 14px; }
+      
+      .size-16 { font-size: 16px; }
+      
+      .size-18 { font-size: 18px; }
+      
+      .size-21 { font-size: 21px; }
+      
+      .size-24 { font-size: 24px; }
+      
+      .size-36 { font-size: 36px; }
+      
+      .size-48 { font-size: 48px; }
+      
+      .size-60 { font-size: 60px; }
+      
+      .size-72 { font-size: 72px; }
+      
+
+      .usage { margin-top: 10px; }
+
+      .usage input {
+        font-family: monospace;
+        margin-right: 3px;
+        padding: 2px 5px;
+        text-align: center;
+      }
+
+      .usage .point { width: 150px; }
+
+      .usage .class { width: 250px; }
+
+      footer {
+        color: #888;
+        font-size: 12px;
+        padding: 20px 0;
+      }
+
+      /* Icon Font: fontcustom */
+
+      @font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.eot");
+  src: url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.woff") format("woff"),
+       url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.ttf") format("truetype"),
+       url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.svg#fontcustom") format("svg");
+  }
+}
+
+      [data-icon]:before { content: attr(data-icon); }
+
+      [data-icon]:before,
+      .icon-Elkfox:before,
+.icon-General_Account:before,
+.icon-General_Arrow-Down:before,
+.icon-General_Arrow-Left:before,
+.icon-General_Arrow-Right:before,
+.icon-General_Arrow-Up:before,
+.icon-General_Cart:before,
+.icon-General_Chevron-Next:before,
+.icon-General_Chevron-Previous:before,
+.icon-General_Clock:before,
+.icon-General_Comment:before,
+.icon-General_Cross:before,
+.icon-General_Email:before,
+.icon-General_Home:before,
+.icon-General_Layout-Grid:before,
+.icon-General_Layout-List:before,
+.icon-General_Loading:before,
+.icon-General_Minus:before,
+.icon-General_Phone:before,
+.icon-General_Plus:before,
+.icon-General_Quote-Close:before,
+.icon-General_Quote-Open:before,
+.icon-General_RSS:before,
+.icon-General_Search:before,
+.icon-General_Settings:before,
+.icon-General_Sort-Ascending:before,
+.icon-General_Sort-Default:before,
+.icon-General_Sort-Descending:before,
+.icon-General_Sort-Left:before,
+.icon-General_Sort-Right:before,
+.icon-General_Star-Empty:before,
+.icon-General_Star-Full:before,
+.icon-General_Star-Half:before,
+.icon-General_Tick:before,
+.icon-General_Wishlist:before,
+.icon-Payments_-Diners-Club:before,
+.icon-Payments_-Google-Wallet:before,
+.icon-Payments_-Shopify:before,
+.icon-Payments_Amazon:before,
+.icon-Payments_American-Express:before,
+.icon-Payments_Apple-Pay:before,
+.icon-Payments_Bitcoin:before,
+.icon-Payments_Discover:before,
+.icon-Payments_Eway:before,
+.icon-Payments_JCB:before,
+.icon-Payments_MasterCard:before,
+.icon-Payments_PayPal:before,
+.icon-Payments_Sage:before,
+.icon-Payments_Skrill:before,
+.icon-Payments_Visa:before,
+.icon-Payments_Western-Union:before,
+.icon-Payments_WorldPay:before,
+.icon-Payments_ebay:before,
+.icon-Shopify:before,
+.icon-Social_Disqus:before,
+.icon-Social_Dribbble:before,
+.icon-Social_Facebook:before,
+.icon-Social_Fancy:before,
+.icon-Social_Github:before,
+.icon-Social_Google-Plus:before,
+.icon-Social_Instagram:before,
+.icon-Social_LinkedIn:before,
+.icon-Social_Pinterest:before,
+.icon-Social_Tumblr:before,
+.icon-Social_Twitter:before,
+.icon-Social_Vimeo:before,
+.icon-Social_Weheartit:before,
+.icon-Social_Youtube:before {
+        display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+      }
+
+      .icon-Elkfox:before { content: "\f236"; }
+.icon-General_Account:before { content: "\f237"; }
+.icon-General_Arrow-Down:before { content: "\f238"; }
+.icon-General_Arrow-Left:before { content: "\f239"; }
+.icon-General_Arrow-Right:before { content: "\f23a"; }
+.icon-General_Arrow-Up:before { content: "\f23b"; }
+.icon-General_Cart:before { content: "\f23c"; }
+.icon-General_Chevron-Next:before { content: "\f23d"; }
+.icon-General_Chevron-Previous:before { content: "\f23e"; }
+.icon-General_Clock:before { content: "\f23f"; }
+.icon-General_Comment:before { content: "\f240"; }
+.icon-General_Cross:before { content: "\f241"; }
+.icon-General_Email:before { content: "\f242"; }
+.icon-General_Home:before { content: "\f243"; }
+.icon-General_Layout-Grid:before { content: "\f244"; }
+.icon-General_Layout-List:before { content: "\f245"; }
+.icon-General_Loading:before { content: "\f246"; }
+.icon-General_Minus:before { content: "\f247"; }
+.icon-General_Phone:before { content: "\f248"; }
+.icon-General_Plus:before { content: "\f249"; }
+.icon-General_Quote-Close:before { content: "\f24a"; }
+.icon-General_Quote-Open:before { content: "\f24b"; }
+.icon-General_RSS:before { content: "\f24c"; }
+.icon-General_Search:before { content: "\f24d"; }
+.icon-General_Settings:before { content: "\f24e"; }
+.icon-General_Sort-Ascending:before { content: "\f24f"; }
+.icon-General_Sort-Default:before { content: "\f250"; }
+.icon-General_Sort-Descending:before { content: "\f251"; }
+.icon-General_Sort-Left:before { content: "\f252"; }
+.icon-General_Sort-Right:before { content: "\f253"; }
+.icon-General_Star-Empty:before { content: "\f254"; }
+.icon-General_Star-Full:before { content: "\f255"; }
+.icon-General_Star-Half:before { content: "\f256"; }
+.icon-General_Tick:before { content: "\f257"; }
+.icon-General_Wishlist:before { content: "\f258"; }
+.icon-Payments_-Diners-Club:before { content: "\f259"; }
+.icon-Payments_-Google-Wallet:before { content: "\f25a"; }
+.icon-Payments_-Shopify:before { content: "\f25b"; }
+.icon-Payments_Amazon:before { content: "\f25c"; }
+.icon-Payments_American-Express:before { content: "\f25d"; }
+.icon-Payments_Apple-Pay:before { content: "\f25e"; }
+.icon-Payments_Bitcoin:before { content: "\f25f"; }
+.icon-Payments_Discover:before { content: "\f260"; }
+.icon-Payments_Eway:before { content: "\f261"; }
+.icon-Payments_JCB:before { content: "\f262"; }
+.icon-Payments_MasterCard:before { content: "\f263"; }
+.icon-Payments_PayPal:before { content: "\f264"; }
+.icon-Payments_Sage:before { content: "\f265"; }
+.icon-Payments_Skrill:before { content: "\f266"; }
+.icon-Payments_Visa:before { content: "\f267"; }
+.icon-Payments_Western-Union:before { content: "\f268"; }
+.icon-Payments_WorldPay:before { content: "\f269"; }
+.icon-Payments_ebay:before { content: "\f26a"; }
+.icon-Shopify:before { content: "\f26b"; }
+.icon-Social_Disqus:before { content: "\f26c"; }
+.icon-Social_Dribbble:before { content: "\f26d"; }
+.icon-Social_Facebook:before { content: "\f26e"; }
+.icon-Social_Fancy:before { content: "\f26f"; }
+.icon-Social_Github:before { content: "\f270"; }
+.icon-Social_Google-Plus:before { content: "\f271"; }
+.icon-Social_Instagram:before { content: "\f272"; }
+.icon-Social_LinkedIn:before { content: "\f273"; }
+.icon-Social_Pinterest:before { content: "\f274"; }
+.icon-Social_Tumblr:before { content: "\f275"; }
+.icon-Social_Twitter:before { content: "\f276"; }
+.icon-Social_Vimeo:before { content: "\f277"; }
+.icon-Social_Weheartit:before { content: "\f278"; }
+.icon-Social_Youtube:before { content: "\f279"; }
+
+.container { width:100%;max-width:100%; }
+
+    </style>
+
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script>
+      function toggleCharacters() {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className === 'characters-off' ? '' : 'characters-off';
+      }
+    </script>
+  </head>
+
+  <body class="characters-off">
+    <div id="page" class="container">
+      <header>
+        <h1>Elkfox Shopify Font</h1>
+        <a onclick="toggleCharacters(); return false;" href="#">Toggle Preview Characters</a>
+      </header>
+
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Elkfox" class="icon-Elkfox"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Elkfox" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf236;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Account" class="icon-General_Account"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Account" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf237;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Arrow-Down" class="icon-General_Arrow-Down"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Arrow-Down" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf238;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Arrow-Left" class="icon-General_Arrow-Left"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Arrow-Left" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf239;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Arrow-Right" class="icon-General_Arrow-Right"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Arrow-Right" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf23a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Arrow-Up" class="icon-General_Arrow-Up"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Arrow-Up" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf23b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Cart" class="icon-General_Cart"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Cart" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf23c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Chevron-Next" class="icon-General_Chevron-Next"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Chevron-Next" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf23d;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Chevron-Previous" class="icon-General_Chevron-Previous"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Chevron-Previous" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf23e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Clock" class="icon-General_Clock"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Clock" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf23f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Comment" class="icon-General_Comment"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Comment" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf240;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Cross" class="icon-General_Cross"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Cross" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf241;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Email" class="icon-General_Email"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Email" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf242;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Home" class="icon-General_Home"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Home" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf243;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Layout-Grid" class="icon-General_Layout-Grid"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Layout-Grid" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf244;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Layout-List" class="icon-General_Layout-List"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Layout-List" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf245;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Loading" class="icon-General_Loading"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Loading" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf246;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Minus" class="icon-General_Minus"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Minus" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf247;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Phone" class="icon-General_Phone"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Phone" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf248;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Plus" class="icon-General_Plus"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Plus" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf249;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Quote-Close" class="icon-General_Quote-Close"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Quote-Close" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Quote-Open" class="icon-General_Quote-Open"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Quote-Open" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_RSS" class="icon-General_RSS"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_RSS" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Search" class="icon-General_Search"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Search" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24d;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Settings" class="icon-General_Settings"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Settings" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Sort-Ascending" class="icon-General_Sort-Ascending"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Sort-Ascending" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Sort-Default" class="icon-General_Sort-Default"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Sort-Default" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf250;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Sort-Descending" class="icon-General_Sort-Descending"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Sort-Descending" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf251;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Sort-Left" class="icon-General_Sort-Left"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Sort-Left" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf252;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Sort-Right" class="icon-General_Sort-Right"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Sort-Right" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf253;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Star-Empty" class="icon-General_Star-Empty"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Star-Empty" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf254;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Star-Full" class="icon-General_Star-Full"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Star-Full" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf255;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Star-Half" class="icon-General_Star-Half"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Star-Half" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf256;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Tick" class="icon-General_Tick"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Tick" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf257;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-General_Wishlist" class="icon-General_Wishlist"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-General_Wishlist" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf258;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_-Diners-Club" class="icon-Payments_-Diners-Club"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_-Diners-Club" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf259;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_-Google-Wallet" class="icon-Payments_-Google-Wallet"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_-Google-Wallet" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf25a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_-Shopify" class="icon-Payments_-Shopify"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_-Shopify" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf25b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Amazon" class="icon-Payments_Amazon"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Amazon" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf25c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_American-Express" class="icon-Payments_American-Express"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_American-Express" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf25d;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Apple-Pay" class="icon-Payments_Apple-Pay"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Apple-Pay" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf25e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Bitcoin" class="icon-Payments_Bitcoin"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Bitcoin" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf25f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Discover" class="icon-Payments_Discover"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Discover" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf260;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Eway" class="icon-Payments_Eway"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Eway" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf261;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_JCB" class="icon-Payments_JCB"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_JCB" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf262;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_MasterCard" class="icon-Payments_MasterCard"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_MasterCard" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf263;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_PayPal" class="icon-Payments_PayPal"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_PayPal" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf264;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Sage" class="icon-Payments_Sage"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Sage" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf265;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Skrill" class="icon-Payments_Skrill"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Skrill" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf266;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Visa" class="icon-Payments_Visa"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Visa" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf267;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_Western-Union" class="icon-Payments_Western-Union"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_Western-Union" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf268;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_WorldPay" class="icon-Payments_WorldPay"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_WorldPay" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf269;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Payments_ebay" class="icon-Payments_ebay"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Payments_ebay" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Shopify" class="icon-Shopify"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Shopify" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Disqus" class="icon-Social_Disqus"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Disqus" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Dribbble" class="icon-Social_Dribbble"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Dribbble" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26d;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Facebook" class="icon-Social_Facebook"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Facebook" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Fancy" class="icon-Social_Fancy"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Fancy" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Github" class="icon-Social_Github"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Github" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf270;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Google-Plus" class="icon-Social_Google-Plus"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Google-Plus" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf271;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Instagram" class="icon-Social_Instagram"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Instagram" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf272;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_LinkedIn" class="icon-Social_LinkedIn"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_LinkedIn" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf273;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Pinterest" class="icon-Social_Pinterest"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Pinterest" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf274;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Tumblr" class="icon-Social_Tumblr"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Tumblr" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf275;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Twitter" class="icon-Social_Twitter"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Twitter" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf276;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Vimeo" class="icon-Social_Vimeo"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Vimeo" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf277;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Weheartit" class="icon-Social_Weheartit"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Weheartit" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf278;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="icon-Social_Youtube" class="icon-Social_Youtube"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".icon-Social_Youtube" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf279;" />
+        </div>
+      </div>
+      
+
+      <footer>
+        Made with love using <a href="http://fontcustom.com">Font Custom</a>.
+      </footer>
+    </div>
+  </body>
+</html>

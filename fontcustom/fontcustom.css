@@ -1,0 +1,175 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.eot");
+  src: url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.woff") format("woff"),
+       url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.ttf") format("truetype"),
+       url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_a1f0754fce4a02cbc28b0f99e0122527.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-Elkfox:before,
+.icon-General_Account:before,
+.icon-General_Arrow-Down:before,
+.icon-General_Arrow-Left:before,
+.icon-General_Arrow-Right:before,
+.icon-General_Arrow-Up:before,
+.icon-General_Cart:before,
+.icon-General_Chevron-Next:before,
+.icon-General_Chevron-Previous:before,
+.icon-General_Clock:before,
+.icon-General_Comment:before,
+.icon-General_Cross:before,
+.icon-General_Email:before,
+.icon-General_Home:before,
+.icon-General_Layout-Grid:before,
+.icon-General_Layout-List:before,
+.icon-General_Loading:before,
+.icon-General_Minus:before,
+.icon-General_Phone:before,
+.icon-General_Plus:before,
+.icon-General_Quote-Close:before,
+.icon-General_Quote-Open:before,
+.icon-General_RSS:before,
+.icon-General_Search:before,
+.icon-General_Settings:before,
+.icon-General_Sort-Ascending:before,
+.icon-General_Sort-Default:before,
+.icon-General_Sort-Descending:before,
+.icon-General_Sort-Left:before,
+.icon-General_Sort-Right:before,
+.icon-General_Star-Empty:before,
+.icon-General_Star-Full:before,
+.icon-General_Star-Half:before,
+.icon-General_Tick:before,
+.icon-General_Wishlist:before,
+.icon-Payments_-Diners-Club:before,
+.icon-Payments_-Google-Wallet:before,
+.icon-Payments_-Shopify:before,
+.icon-Payments_Amazon:before,
+.icon-Payments_American-Express:before,
+.icon-Payments_Apple-Pay:before,
+.icon-Payments_Bitcoin:before,
+.icon-Payments_Discover:before,
+.icon-Payments_Eway:before,
+.icon-Payments_JCB:before,
+.icon-Payments_MasterCard:before,
+.icon-Payments_PayPal:before,
+.icon-Payments_Sage:before,
+.icon-Payments_Skrill:before,
+.icon-Payments_Visa:before,
+.icon-Payments_Western-Union:before,
+.icon-Payments_WorldPay:before,
+.icon-Payments_ebay:before,
+.icon-Shopify:before,
+.icon-Social_Disqus:before,
+.icon-Social_Dribbble:before,
+.icon-Social_Facebook:before,
+.icon-Social_Fancy:before,
+.icon-Social_Github:before,
+.icon-Social_Google-Plus:before,
+.icon-Social_Instagram:before,
+.icon-Social_LinkedIn:before,
+.icon-Social_Pinterest:before,
+.icon-Social_Tumblr:before,
+.icon-Social_Twitter:before,
+.icon-Social_Vimeo:before,
+.icon-Social_Weheartit:before,
+.icon-Social_Youtube:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-Elkfox:before { content: "\f236"; }
+.icon-General_Account:before { content: "\f237"; }
+.icon-General_Arrow-Down:before { content: "\f238"; }
+.icon-General_Arrow-Left:before { content: "\f239"; }
+.icon-General_Arrow-Right:before { content: "\f23a"; }
+.icon-General_Arrow-Up:before { content: "\f23b"; }
+.icon-General_Cart:before { content: "\f23c"; }
+.icon-General_Chevron-Next:before { content: "\f23d"; }
+.icon-General_Chevron-Previous:before { content: "\f23e"; }
+.icon-General_Clock:before { content: "\f23f"; }
+.icon-General_Comment:before { content: "\f240"; }
+.icon-General_Cross:before { content: "\f241"; }
+.icon-General_Email:before { content: "\f242"; }
+.icon-General_Home:before { content: "\f243"; }
+.icon-General_Layout-Grid:before { content: "\f244"; }
+.icon-General_Layout-List:before { content: "\f245"; }
+.icon-General_Loading:before { content: "\f246"; }
+.icon-General_Minus:before { content: "\f247"; }
+.icon-General_Phone:before { content: "\f248"; }
+.icon-General_Plus:before { content: "\f249"; }
+.icon-General_Quote-Close:before { content: "\f24a"; }
+.icon-General_Quote-Open:before { content: "\f24b"; }
+.icon-General_RSS:before { content: "\f24c"; }
+.icon-General_Search:before { content: "\f24d"; }
+.icon-General_Settings:before { content: "\f24e"; }
+.icon-General_Sort-Ascending:before { content: "\f24f"; }
+.icon-General_Sort-Default:before { content: "\f250"; }
+.icon-General_Sort-Descending:before { content: "\f251"; }
+.icon-General_Sort-Left:before { content: "\f252"; }
+.icon-General_Sort-Right:before { content: "\f253"; }
+.icon-General_Star-Empty:before { content: "\f254"; }
+.icon-General_Star-Full:before { content: "\f255"; }
+.icon-General_Star-Half:before { content: "\f256"; }
+.icon-General_Tick:before { content: "\f257"; }
+.icon-General_Wishlist:before { content: "\f258"; }
+.icon-Payments_-Diners-Club:before { content: "\f259"; }
+.icon-Payments_-Google-Wallet:before { content: "\f25a"; }
+.icon-Payments_-Shopify:before { content: "\f25b"; }
+.icon-Payments_Amazon:before { content: "\f25c"; }
+.icon-Payments_American-Express:before { content: "\f25d"; }
+.icon-Payments_Apple-Pay:before { content: "\f25e"; }
+.icon-Payments_Bitcoin:before { content: "\f25f"; }
+.icon-Payments_Discover:before { content: "\f260"; }
+.icon-Payments_Eway:before { content: "\f261"; }
+.icon-Payments_JCB:before { content: "\f262"; }
+.icon-Payments_MasterCard:before { content: "\f263"; }
+.icon-Payments_PayPal:before { content: "\f264"; }
+.icon-Payments_Sage:before { content: "\f265"; }
+.icon-Payments_Skrill:before { content: "\f266"; }
+.icon-Payments_Visa:before { content: "\f267"; }
+.icon-Payments_Western-Union:before { content: "\f268"; }
+.icon-Payments_WorldPay:before { content: "\f269"; }
+.icon-Payments_ebay:before { content: "\f26a"; }
+.icon-Shopify:before { content: "\f26b"; }
+.icon-Social_Disqus:before { content: "\f26c"; }
+.icon-Social_Dribbble:before { content: "\f26d"; }
+.icon-Social_Facebook:before { content: "\f26e"; }
+.icon-Social_Fancy:before { content: "\f26f"; }
+.icon-Social_Github:before { content: "\f270"; }
+.icon-Social_Google-Plus:before { content: "\f271"; }
+.icon-Social_Instagram:before { content: "\f272"; }
+.icon-Social_LinkedIn:before { content: "\f273"; }
+.icon-Social_Pinterest:before { content: "\f274"; }
+.icon-Social_Tumblr:before { content: "\f275"; }
+.icon-Social_Twitter:before { content: "\f276"; }
+.icon-Social_Vimeo:before { content: "\f277"; }
+.icon-Social_Weheartit:before { content: "\f278"; }
+.icon-Social_Youtube:before { content: "\f279"; }
